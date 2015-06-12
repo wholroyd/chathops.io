@@ -203,7 +203,11 @@ input {
 	left: 45px;
 	font-size: 18px;
 	font-weight: 900;
-	position:absolute; 
+	position:absolute;
+    background: url(../img/logo_100_white_transbg.png) no-repeat;
+    background-size: 30px 30px;
+    padding-left: 40px;
+    padding-bottom: 10px;
 }
 
 #h .social {
