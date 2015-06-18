@@ -1,0 +1,6 @@
+[submodule "api"]
+	path = api
+	url = https://github.com/chathops/chathops-api
+[submodule "client"]
+	path = client
+	url = https://github.com/chathops/chathops-client
