@@ -105,13 +105,13 @@ call :SelectNodeVersion
 
 :: 3. Install npm packages
 IF EXIST "%DEPLOYMENT_TARGET%\api\package.json" (
-  pushd "%DEPLOYMENT_TARGET%"
+  pushd "%DEPLOYMENT_TARGET%\api"
   call :ExecuteCmd !NPM_CMD! install --production
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
 )
 IF EXIST "%DEPLOYMENT_TARGET%\client\package.json" (
-  pushd "%DEPLOYMENT_TARGET%"
+  pushd "%DEPLOYMENT_TARGET%\client"
   call :ExecuteCmd !NPM_CMD! install --production
   IF !ERRORLEVEL! NEQ 0 goto error
   popd
