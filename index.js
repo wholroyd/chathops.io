@@ -1,20 +1,19 @@
 var express = require('express');
 var path = require('path');
-var app = express();
-var router = express.Router();
 
 // Configure local asset requests
+var router = express.Router();
 router.use(express.static(path.join(__dirname, 'assets')));
 router.get('/', function(req, res) {
     res.sendfile(path.join(__dirname, 'index.html')); 
 });
 
 // Configure routing
+var app = express();
 app.use('/', router);
 app.use('/api', require('./api/index.js'));
 app.use('/client', require('./client/index.js'));
 
-// Configure some error handlers
 // -- register 404 handler
 app.use(function(req, res, next) {
     var err = new Error('Not Found');
