@@ -1,0 +1,24 @@
+{
+  "name": "chathops.io",
+  "version": "1.0.0",
+  "description": "The ChatHops landing page, set of APIs, and the web based client",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chathops/chathops.io"
+  },
+  "author": "ChatHops contributors",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/chathops/chathops.io/issues"
+  },
+  "homepage": "https://github.com/chathops/chathops.io",
+  "dependencies": {
+    "express": "^4.12.4",
+    "newrelic": "^1.20.1"
+  }
+}
