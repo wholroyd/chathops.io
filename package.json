@@ -2,7 +2,7 @@
   "name": "chathops.io",
   "version": "1.0.0",
   "description": "The ChatHops landing page, set of APIs, and the web based client",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"

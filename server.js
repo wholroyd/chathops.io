@@ -1,10 +1,10 @@
 var express = require('express');
 var app = express();
 
-// Load all of the app(s)
-app.use('/',        require('./index.js'));
+// Load all of the app(s) in order of furthest child to root
 app.use('/api',     require('./chathops-api/index.js'));
 app.use('/client',  require('./chathops-client/index.js'));
+app.use('/',        require('./index.js'));
 
 // Start the server
 var port = process.env.PORT || 7000;
