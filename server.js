@@ -13,6 +13,8 @@ var server = app.listen(port, function () {
     var host = server.address().address;
     var port = server.address().port;
 
-    console.log('Listening at http://%s:%s using NodeJS verison %s', host, port, process.version);
-    console.log(app._router.stack);
+    console.log('Listening at http://%s:%s', host, port)
+    console.log('-- using NodeJS verison %s', process.version);
+    console.log('-- from the path of %s', __dirname);
+    // console.log(app._router.stack);
 });

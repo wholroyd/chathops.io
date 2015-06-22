@@ -29,6 +29,9 @@ module.exports = (function() {
         }    
     });
     
+    // console.log("### Routing from chathops.io (parent)");
+    // console.log(app._router.stack);
+    
     return app;
     
 })();
